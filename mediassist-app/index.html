@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<title>MediAssist</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>MediAssist</h1>
+
+<p>Smart Medicine Assistant for Seniors</p>
+
+</header>
+
+<div class="container">
+
+<div class="searchBox">
+
+<input id="searchInput" placeholder="Search medicine">
+
+<button onclick="searchMedicine()">Search</button>
+
+<button onclick="startScanner()">📷 Scan Barcode</button>
+
+</div>
+
+<div id="suggestions"></div>
+
+<div id="scanner"></div>
+
+<div id="medicineInfo"></div>
+
+</div>
+
+<div class="aiBox">
+
+<h2>AI Medical Term Explainer</h2>
+
+<input id="termInput" placeholder="Example: Antipyretic">
+
+<button onclick="askAI()">Explain with AI</button>
+
+<p id="aiResult"></p>
+
+</div>
+
+<script src="medicines.js"></script>
+
+<script src="ai.js"></script>
+
+<script src="scanner.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
